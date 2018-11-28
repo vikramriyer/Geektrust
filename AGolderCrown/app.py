@@ -1,0 +1,18 @@
+from classes.Southeros import Southeros
+
+southeros = Southeros()
+print(southeros.get_ruler())
+southeros.send_message('space', 'air', "Let’s swing the sword together")
+southeros.send_message('space', 'land', "Die or play the tame of thrones")
+southeros.send_message('space', 'ice', "Ahoy! Fight for me with men and money")
+southeros.send_message('space', 'water', "Summer is coming")
+# southeros.send_message('space', 'fire', "Drag on Martin!")
+ruler = southeros.get_ruler()
+print(ruler)
+southeros.send_message('fire', 'air', "Let’s swing the sword together")
+southeros.send_message('fire', 'land', "Die or play the tame of thrones")
+southeros.send_message('fire', 'ice', "Ahoy! Fight for me with men and money")
+southeros.send_message('fire', 'water', "Summer is coming")
+ruler = southeros.get_ruler()
+print(ruler)
+# print(southeros.get_allies(ruler))
